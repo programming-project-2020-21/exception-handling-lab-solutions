@@ -41,5 +41,13 @@ public class MyStackTest {
       });
    }
 
+   @Test
+   void shouldThrowExceptionWhenPeekingEmptyStack() {
+      stack = new MyStack(5);
+      assertThrows(EmptyStackException.class, () -> {
+         stack.peek();
+      });
+   }
+
 
 }
