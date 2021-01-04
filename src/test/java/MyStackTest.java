@@ -8,7 +8,7 @@ public class MyStackTest {
    @Test
    void shouldBeCreatedEmpty() {
       MyStack stack = new MyStack(10);
-      assertEquals(stack.getSize(), 1);
+      assertEquals(stack.getSize(), 0);
    }
 
    @Test
