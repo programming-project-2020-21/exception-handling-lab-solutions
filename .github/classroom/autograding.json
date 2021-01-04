@@ -53,7 +53,7 @@
     {
       "name": "Peeking the stack should show the last added element: 1 push",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowTopElementWhenPeeking\" test",
+      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowLastAddedElementWhenPeeking1Push\" test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "Peeking the stack should show the last added element: 3 pushes",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowTopElementWhenPeeking\" test",
+      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowLastAddedElementWhenPeeking3Pushes\" test",
       "input": "",
       "output": "",
       "comparison": "included",
