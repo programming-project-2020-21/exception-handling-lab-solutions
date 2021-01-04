@@ -1,52 +1,71 @@
 import org.junit.jupiter.api.Test;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MyStackTest {
-   MyStack stack;
 
    @Test
    void shouldBeCreatedEmpty() {
-      stack = new MyStack(1);
-      assertEquals(stack.getSize(), 0);
+      MyStack stack = new MyStack(10);
+      assertEquals(stack.getSize(), 1);
+   }
+
+   @Test
+   void shouldKeepInsertionOrder() {
+      MyStack stack = new MyStack(3);
+      stack.push(10);
+      stack.push(20);
+      stack.push(30);
+      assertEquals(stack.pop(),30);
+      assertEquals(stack.pop(),20);
+      assertEquals(stack.pop(),10);
    }
 
    @Test
    void shouldIncreaseSizeWhenPushing() {
-      stack = new MyStack(1);
+      MyStack stack = new MyStack(1);
       stack.push(5);
       assertEquals(stack.getSize(), 1);
    }
 
    @Test
+   void shouldDecreaseSizeWhenPopping() {
+      MyStack stack = new MyStack(2);
+      stack.push(10);
+      stack.push(20);
+      assertEquals(stack.getSize(), 2);
+      stack.pop();
+      assertEquals(stack.getSize(), 1);
+   }
+
+   @Test
    void shouldShowTopElementWhenPeeking() {
-      stack = new MyStack(1);
+      MyStack stack = new MyStack(1);
       stack.push(5);
       assertEquals(stack.peek(), 5);
    }
 
    @Test
-   void shouldRejectPushWhenFull() {
-      stack = new MyStack(1);
+   void shouldThrowExceptionWhenPushingToFullStack() {
+      MyStack stack = new MyStack(2);
       stack.push(5);
-      var pushSucceeded = stack.push(10);
-      assertFalse(pushSucceeded);
+      stack.push(10);
+      assertThrows(FullStackException.class, () -> {
+         stack.push(15);
+      });
    }
 
    @Test
    void shouldThrowExceptionWhenPoppingEmptyStack() {
-      stack = new MyStack(5);
-      assertThrows(EmptyStackException.class, () -> {
-         stack.pop();
-      });
+      MyStack stack = new MyStack(5);
+      assertThrows(EmptyStackException.class, stack::pop);
    }
 
    @Test
    void shouldThrowExceptionWhenPeekingEmptyStack() {
-      stack = new MyStack(5);
-      assertThrows(EmptyStackException.class, () -> {
-         stack.peek();
-      });
+      MyStack stack = new MyStack(5);
+      assertThrows(EmptyStackException.class, stack::peek);
    }
 
 

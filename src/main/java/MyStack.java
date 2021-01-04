@@ -10,20 +10,12 @@ public class MyStack {
       this.top = 0;
    }
 
-   public boolean push(int value) {
-      array[top] = value;
-      top++;
-      return true;
+   public boolean isEmpty() {
+      return top == 0;
    }
 
-   public int pop() {
-      top--;
-      int value = array[top];
-      return value;
-   }
-
-   public int peek() {
-      return array[top-1];
+   public boolean isFull() {
+      return top == getMaxSize();
    }
 
    public int getSize() {
@@ -34,10 +26,35 @@ public class MyStack {
       return this.array.length;
    }
 
+   public boolean push(int value) throws FullStackException {
+      if (isFull())
+         throw new FullStackException(getMaxSize(), value);
+
+      array[top] = value;
+      top++;
+      return true;
+   }
+
+   public int pop() throws EmptyStackException {
+      if (isEmpty())
+         throw new EmptyStackException();
+
+      top--;
+      int lastAddedValue = array[top];
+      return lastAddedValue;
+   }
+
+   public int peek() throws EmptyStackException {
+      if (isEmpty())
+         throw new EmptyStackException();
+
+      return array[top - 1];
+   }
+
    @Override
    public String toString() {
       return "Size: " + array.length + "\n" +
               "Top: " + top + "\n" +
-              "Contents: "+Arrays.toString(array);
+              "Contents: " + Arrays.toString(array);
    }
 }

@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Stack should be created empty",
+      "setup": "",
+      "run": "mvn -ntp \"-Dtest=MyStackTest#shouldBeCreatedEmpty\" test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Stack behaves as a \"Last-In-First-Out\" data structure",
+      "setup": "",
+      "run": "mvn -ntp \"-Dtest=MyStackTest#shouldKeepInsertionOrder\" test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Stack size increases when new elements are pushed to it.",
+      "setup": "",
+      "run": "mvn -ntp \"-Dtest=MyStackTest#shouldIncreaseSizeWhenPushing\" test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Stack size decreases when elements are popped from it.",
+      "setup": "",
+      "run": "mvn -ntp \"-Dtest=MyStackTest#shouldDecreaseSizeWhenPopping\" test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
