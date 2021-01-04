@@ -12,13 +12,26 @@ public class MyStackTest {
    }
 
    @Test
-   void shouldKeepInsertionOrder() {
+   void shouldBehaveAsLifoPushThenPop() {
       MyStack stack = new MyStack(3);
       stack.push(10);
       stack.push(20);
       stack.push(30);
       assertEquals(stack.pop(),30);
       assertEquals(stack.pop(),20);
+      assertEquals(stack.pop(),10);
+   }
+
+   @Test
+   void shouldBehaveAsLifoPushPopInterleaved() {
+      MyStack stack = new MyStack(3);
+      stack.push(10);
+      stack.push(20);
+      assertEquals(stack.pop(),20);
+      stack.push(30);
+      assertEquals(stack.pop(),30);
+      stack.push(40);
+      assertEquals(stack.pop(),40);
       assertEquals(stack.pop(),10);
    }
 
@@ -40,10 +53,29 @@ public class MyStackTest {
    }
 
    @Test
-   void shouldShowTopElementWhenPeeking() {
+   void shouldShowLastAddedElementWhenPeeking1Push() {
       MyStack stack = new MyStack(1);
       stack.push(5);
       assertEquals(stack.peek(), 5);
+   }
+
+   @Test
+   void shouldShowLastAddedElementWhenPeeking3Pushes() {
+      MyStack stack = new MyStack(4);
+      stack.push(5);
+      stack.push(10);
+      stack.push(15);
+      assertEquals(stack.peek(), 15);
+   }
+
+   @Test
+   void shouldShowLastAddedElementWhenPeekingPushAndPop() {
+      MyStack stack = new MyStack(4);
+      stack.push(5);
+      stack.push(10);
+      stack.push(15);
+      stack.pop();
+      assertEquals(stack.peek(), 10);
    }
 
    @Test
@@ -64,7 +96,7 @@ public class MyStackTest {
 
    @Test
    void shouldThrowExceptionWhenPeekingEmptyStack() {
-      MyStack stack = new MyStack(5);
+      MyStack stack = new MyStack(7);
       assertThrows(EmptyStackException.class, stack::peek);
    }
 

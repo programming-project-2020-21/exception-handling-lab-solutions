@@ -32,7 +32,7 @@ class FullStackExceptionTest {
    }
 
    @Test
-   void shouldHaveCustomMessage() {
+   void shouldDisplayCustomMessage() {
       try {
          stack.push(30);
       } catch (Exception e) {
