@@ -1,3 +1,5 @@
+package ex3;
+
 import org.junit.jupiter.api.Test;
 
 

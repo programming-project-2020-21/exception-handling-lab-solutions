@@ -61,9 +61,9 @@
       "points": 1
     },
     {
-      "name": "Peeking the stack should show the last added element: 3 pushes",
+      "name": "Exercise 1",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowLastAddedElementWhenPeeking3Pushes\" test",
+      "run": "mvn -q -Dtest=FileLoaderTest test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -71,9 +71,9 @@
       "points": 1
     },
     {
-      "name": "Peeking the stack should show the last added element: push and pop",
+      "name": "Exercise 2",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowLastAddedElementWhenPeekingPushAndPop\" test",
+      "run": "mvn -q -Dtest=DividerTest test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -81,9 +81,19 @@
       "points": 1
     },
     {
-      "name": "An exception should be thrown when pushing to a full stack",
+      "name": "Exercise 3",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldThrowExceptionWhenPushingToFullStack\" test",
+      "run": "mvn -q -Dtest=MyStackTest,EmptyStackExceptionTest,FullStackExceptionTest test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Exercise 4",
+      "setup": "",
+      "run": "mvn -q -Dtest=ParserTest test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -91,74 +101,14 @@
       "points": 1
     },
     {
-      "name": "An exception should be thrown when popping from an empty stack",
+      "name": "Exercise 5",
       "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldThrowExceptionWhenPoppingEmptyStack\" test",
+      "run": "mvn -q -Dtest=BankAccount test",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "An exception should be thrown when peeking from an empty stack",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldThrowExceptionWhenPeekingEmptyStack\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Full stack exception messages should contain the pushed elements.",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=FullStackExceptionTest#shouldInformElementInMessage\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Full stack exception messages should contain the max stack sizes.",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=FullStackExceptionTest#shouldInformMaxSizeInMessage\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Full stack exception messages should comply with the defined pattern.",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=FullStackExceptionTest#shouldDisplayCustomMessage\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Empty stack exception messages should comply with the defined pattern - thrown on pop().",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=EmptyStackExceptionTest#shouldHaveCustomMessageOnPop\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Empty stack exception messages should comply with the defined pattern - thrown on peek().",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=EmptyStackExceptionTest#shouldHaveCustomMessageOnPeek\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
+      "points": 5
     }
   ]
 }

@@ -1,3 +1,5 @@
+package ex3;
+
 import java.util.Arrays;
 
 public class MyStack {
@@ -26,7 +28,7 @@ public class MyStack {
       return this.array.length;
    }
 
-   public boolean push(int value) throws FullStackException {
+   public boolean push(int value) {
       if (isFull())
          throw new FullStackException(getMaxSize(), value);
 
@@ -35,7 +37,7 @@ public class MyStack {
       return true;
    }
 
-   public int pop() throws EmptyStackException {
+   public int pop() {
       if (isEmpty())
          throw new EmptyStackException();
 
@@ -44,7 +46,7 @@ public class MyStack {
       return lastAddedValue;
    }
 
-   public int peek() throws EmptyStackException {
+   public int peek() {
       if (isEmpty())
          throw new EmptyStackException();
 
@@ -53,8 +55,6 @@ public class MyStack {
 
    @Override
    public String toString() {
-      return "Size: " + array.length + "\n" +
-              "Top: " + top + "\n" +
-              "Contents: " + Arrays.toString(array);
+      return Arrays.toString(Arrays.copyOfRange(array,0,top));
    }
 }

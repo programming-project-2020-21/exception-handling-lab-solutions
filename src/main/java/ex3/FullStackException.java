@@ -1,3 +1,5 @@
+package ex3;
+
 public class FullStackException extends RuntimeException {
 
    int maxStackSize;
