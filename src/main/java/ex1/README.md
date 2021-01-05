@@ -11,7 +11,7 @@ You must use the method `readFileSize()` to retrieve the size of individual file
 FileLoader.readFileSizes(new String[]{"src/test/resources/names.txt", "src/test/resources/ages.txt"})
 // → [28, 14]
 
-FileLoader.readFileSizes(new String[]{planets.txt", "dimensions.txt"})
+FileLoader.readFileSizes(new String[]{"planets.txt", "dimensions.txt"})
 // → [-1, -1]
 ```
 
