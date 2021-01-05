@@ -16,4 +16,4 @@ Parser.parseToInt(new String[]{"1", "2", "3"})
 // → [1, 2, 3]
 ```
 
-Your solution should pass all test cases defined in [`ParserTest.java`](ParserTest.java).
+Your solution should pass all test cases defined in [`ParserTest.java`](../../../test/java/ex4/ParserTest.java).

@@ -19,4 +19,4 @@ Divider.divide(new int[]{2, 6, 7}, new int[]{2, 2, 2})
 // → [1, 3, 4]
 ```
 
-Your solution should pass all test cases defined in  [`DividerTest`](DividerTest.java).
+Your solution should pass all test cases defined in  [`DividerTest`](../../../test/java/ex2/DividerTest.java).

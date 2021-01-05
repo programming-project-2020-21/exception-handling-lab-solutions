@@ -39,4 +39,4 @@ account.runBatchOperations(new String[]{"w;5", "w;10", "d;100"})
 // → balance = 215
 ```
 
-Your solution should pass all test cases defined in [`BankAccountTest`](BankAccountTest.java).
+Your solution should pass all test cases defined in [`BankAccountTest`](../../../test/java/ex5/BankAccountTest.java).

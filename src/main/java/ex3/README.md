@@ -40,6 +40,6 @@ stack.push(30);
 // → [10, 30]
 ```
 
-Your solution should pass all test cases defined in [`MyStackTest`](MyStackTest.java), [`EmptyStackExceptionTest`](EmptyStackExceptionTest.java), and [`FullStackExceptionTest`](FullStackExceptionTest.java).
+Your solution should pass all test cases defined in [`MyStackTest`](../../../test/java/ex3/MyStackTest.java), [`EmptyStackExceptionTest`](../../../test/java/ex3/EmptyStackExceptionTest.java), and [`FullStackExceptionTest`](../../../test/java/ex3/FullStackExceptionTest.java).
 
 Read more about stacks and how they work at [https://en.wikipedia.org/wiki/Stack_(abstract_data_type)](https://en.wikipedia.org/wiki/Stack_(abstract_data_type\)).
