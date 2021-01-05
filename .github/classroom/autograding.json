@@ -43,7 +43,7 @@
     {
       "name": "Exercise 5",
       "setup": "",
-      "run": "mvn -q -Dtest=BankAccount test",
+      "run": "mvn -q -Dtest=BankAccountTest test",
       "input": "",
       "output": "",
       "comparison": "included",
