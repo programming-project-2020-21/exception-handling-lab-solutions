@@ -13,17 +13,8 @@ public class FileLoader {
    }
 
    public static long[] readFileSizes(String[] fileNames) {
-      long[] sizes = new long[fileNames.length];
-
-      for (int i = 0; i < fileNames.length; i++) {
-         try {
-            sizes[i] = readFileSize(fileNames[i]);
-         } catch (IOException e) {
-            sizes[i] = -1;
-         }
-      }
-
-      return sizes;
+      // Write your code here!
+      return null;
    }
 
 }
