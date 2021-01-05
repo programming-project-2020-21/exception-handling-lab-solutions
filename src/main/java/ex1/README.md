@@ -15,7 +15,7 @@ FileLoader.readFileSizes(new String[]{"planets.txt", "dimensions.txt"})
 // → [-1, -1]
 ```
 
-Your solution should pass all test cases defined in [`FileLoaderTest`](FileLoaderTest.java).
+Your solution should pass all test cases defined in [`FileLoaderTest`](../../../test/java/ex1/FileLoaderTest.java).
 
 Tip: You can easily print an array using `Arrays.toString()`:
 
