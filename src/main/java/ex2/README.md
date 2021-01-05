@@ -14,16 +14,9 @@ Implement the `divide()` method of the [`Divider`](Divider.java) class such that
 
 You must use the method `readFileSize()` to retrieve the size of individual files.
 
-See test cases at [`DividerTest`](DividerTest.java).
-
 ```java
 Divider.divide(new int[]{2, 6, 7}, new int[]{2, 2, 2})
 // → [1, 3, 4]
 ```
 
-Tip: You can easily print an array using `Arrays.toString()`:
-
-```java
-Arrays.toString(new int[]{10, 15, 20})
-// → [10, 15, 20]
-``` 
+Your solution should pass all test cases defined in  [`DividerTest`](DividerTest.java).

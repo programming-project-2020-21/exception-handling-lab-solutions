@@ -1,66 +1,6 @@
 {
   "tests": [
     {
-      "name": "Stack should be created empty",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldBeCreatedEmpty\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Stack behaves as a \"Last-In-First-Out\" data structure: push 3 and popped 3",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldBehaveAsLifoPushThenPop\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Stack behaves as a \"Last-In-First-Out\" data structure: push and popped interleaved",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldBehaveAsLifoPushPopInterleaved\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Stack size increases when new elements are pushed to it.",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldIncreaseSizeWhenPushing\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Stack size decreases when elements are popped from it.",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldDecreaseSizeWhenPopping\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "Peeking the stack should show the last added element: 1 push",
-      "setup": "",
-      "run": "mvn -q \"-Dtest=MyStackTest#shouldShowLastAddedElementWhenPeeking1Push\" test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
       "name": "Exercise 1",
       "setup": "",
       "run": "mvn -q -Dtest=FileLoaderTest test",

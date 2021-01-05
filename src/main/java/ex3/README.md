@@ -24,8 +24,6 @@ Implement the [`MyStack`](MyStack.java) class such that:
 
 - Instances of `FullStackException` should display messages following the template `"Cannot add 30 to the stack. The stack reached its maximum capacity of 2."`, where 30 is the value pushed to the stack and 2 is the number of values the stack can hold.
 
-See test cases at [`MyStackTest`](MyStackTest.java), [`EmptyStackExceptionTest`](EmptyStackExceptionTest.java), and [`FullStackExceptionTest`](FullStackExceptionTest.java).
-
 Usage example:
 
 ```java
@@ -41,5 +39,7 @@ stack.pop()
 stack.push(30);
 // → [10, 30]
 ```
+
+Your solution should pass all test cases defined in [`MyStackTest`](MyStackTest.java), [`EmptyStackExceptionTest`](EmptyStackExceptionTest.java), and [`FullStackExceptionTest`](FullStackExceptionTest.java).
 
 Read more about stacks and how they work at [https://en.wikipedia.org/wiki/Stack_(abstract_data_type)](https://en.wikipedia.org/wiki/Stack_(abstract_data_type\)).

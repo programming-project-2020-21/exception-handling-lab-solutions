@@ -9,11 +9,11 @@ Make sure that:
 
 - Your function should parse both positive and negative numbers.
 
-Your solution should pass all test cases defined in [`ParserTest.java`](ParserTest.java).
-
 Usage example:
 
 ```java
 Parser.parseToInt(new String[]{"1", "2", "3"})
 // → [1, 2, 3]
 ```
+
+Your solution should pass all test cases defined in [`ParserTest.java`](ParserTest.java).

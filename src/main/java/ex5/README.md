@@ -23,8 +23,6 @@ Complete the implementation of the [`BankAccount`](BankAccount.java) class accor
 
 - `runBatchOperations()` should not fail if `InsufficientFundsException`, `InvalidWithdrawException` or `InvalidDepositException` exceptions are thrown. Instead, it should write their messages in the console.
 
-Your solution should pass all test cases defined in [`BankAccountTest`](BankAccountTest.java).
-
 Usage example:
 
 ```java
@@ -41,4 +39,4 @@ account.runBatchOperations(new String[]{"w;5", "w;10", "d;100"})
 // → balance = 215
 ```
 
-Read more about stacks and how they work at [https://en.wikipedia.org/wiki/Stack_(abstract_data_type)](https://en.wikipedia.org/wiki/Stack_(abstract_data_type\)).
+Your solution should pass all test cases defined in [`BankAccountTest`](BankAccountTest.java).

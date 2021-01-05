@@ -7,8 +7,6 @@ Implement the `readFileSizes()` method of the [`FileLoader`](FileLoader.java) cl
 
 You must use the method `readFileSize()` to retrieve the size of individual files.
 
-See test cases at [`FileLoaderTest`](FileLoaderTest.java).
-
 ```java
 FileLoader.readFileSizes(new String[]{"src/test/resources/names.txt", "src/test/resources/ages.txt"})
 // → [28, 14]
@@ -16,6 +14,8 @@ FileLoader.readFileSizes(new String[]{"src/test/resources/names.txt", "src/test/
 FileLoader.readFileSizes(new String[]{planets.txt", "dimensions.txt"})
 // → [-1, -1]
 ```
+
+Your solution should pass all test cases defined in  [`DividerTest`](DividerTest.java). [`FileLoaderTest`](FileLoaderTest.java).
 
 Tip: You can easily print an array using `Arrays.toString()`:
 
