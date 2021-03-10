@@ -1,6 +1,6 @@
 # Exception Handling
 
-This exercise list will help you practice different aspects of exception handling in Java.
+These exercises will help you practice different aspects of exception handling in Java.
 
 Make sure to read the instructions carefully.
 

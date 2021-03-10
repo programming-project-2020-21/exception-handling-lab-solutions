@@ -1,9 +1,9 @@
 ## Exercise 1: Using the `try-catch` block
 
-Implement the `readFileSizes()` method of the [`FileLoader`](FileLoader.java) class such that it:
+Implement the `readFileSizes()` method of the [`FileLoader`](FileLoader.java) class such that:
 
--  returns an array containing sizes of the files listed in the input `fileNames` array
--  if a file does not exist, assign a file size of -1
+- it returns an array containing sizes of the files listed in the input `fileNames` array
+- if a file does not exist, it assigns a file size of -1
 
 You must use the method `readFileSize()` to retrieve the size of individual files.
 
